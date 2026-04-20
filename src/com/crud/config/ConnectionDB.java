@@ -1,13 +1,11 @@
 package com.crud.config;
 import java.sql.*;
 
-
-
 public class ConnectionDB {
 	Connection cn;
 	public ConnectionDB() {
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			cn = DriverManager.getConnection("jdbc:mysql://localhost/crud_java" , "root" ,"");
 			System.out.println("Conneion établie !");
 		} catch (Exception e) {
