@@ -7,7 +7,7 @@ public class ConnectionDB {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			cn = DriverManager.getConnection("jdbc:mysql://localhost/crud_java" , "root" ,"");
-			System.out.println("Conneion établie !");
+			System.out.println("Connection établie !");
 		} catch (Exception e) {
 			System.out.println("Connection non établie");
 		}
